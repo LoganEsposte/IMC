@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imc</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="header">
+                <img class="img" src="https://img.freepik.com/vetores-gratis/homem-mostra-gesto-de-grande-ideia_10045-637.jpg?w=2000"
+                    alt="Foto Perfil">
+            </div>
+        </header>
+        <main>
+
+
+            <div class="main">
+                <h1>
+                    Indie de Massa Corporal
+                </h1>
+                <section>
+                    <input type="number"  placeholder="Peso" class="peso text deslocamentoXP"></input>
+
+                    <div class="iconeR deslocamentoXN">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M12,3A4,4 0 0,1 16,7C16,7.73 15.81,8.41 15.46,9H18C18.95,9 19.75,9.67 19.95,10.56C21.96,18.57 22,18.78 22,19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19C2,18.78 2.04,18.57 4.05,10.56C4.25,9.67 5.05,9 6,9H8.54C8.19,8.41 8,7.73 8,7A4,4 0 0,1 12,3M12,5A2,2 0 0,0 10,7A2,2 0 0,0 12,9A2,2 0 0,0 14,7A2,2 0 0,0 12,5M6,11V19H8V16.5L9,17.5V19H11V17L9,15L11,13V11H9V12.5L8,13.5V11H6M15,11C13.89,11 13,11.89 13,13V17C13,18.11 13.89,19 15,19H18V14H16V17H15V13H18V11H15Z" />
+                        </svg>
+                    </div>
+                </section>
+                <section>
+                    <div class="iconeL deslocamentoXP  paraFrente">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M7,2C8.78,2 9.67,4.16 8.42,5.42C7.16,6.67 5,5.78 5,4A2,2 0 0,1 7,2M5.5,7H8.5A2,2 0 0,1 10.5,9V14.5H9V22H5V14.5H3.5V9A2,2 0 0,1 5.5,7M19,8H21L18,4L15,8H17V16H15L18,20L21,16H19M22,2H14V4H22M22,20H14V22H22" />
+                        </svg>
+                    </div>
+                    <input type="number" placeholder="Altura" class="altura text deslocamentoXN"></input>
+                </section>
+                <section>
+                        <div onclick="abrirModal()" class="text neutro deslocamentoXP saibaMais">Saiba mais</div>
+                        <div class="iconeR deslocamentoXN">
+                            <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                                <path fill="currentColor"
+                                d="M10,13C9.65,13.59 9.36,14.24 9.19,14.93C6.5,15.16 3.9,16.42 3.9,17V18.1H9.2C9.37,18.78 9.65,19.42 10,20H2V17C2,14.34 7.33,13 10,13M10,4A4,4 0 0,1 14,8C14,8.91 13.69,9.75 13.18,10.43C12.32,10.75 11.55,11.26 10.91,11.9L10,12A4,4 0 0,1 6,8A4,4 0 0,1 10,4M10,5.9A2.1,2.1 0 0,0 7.9,8A2.1,2.1 0 0,0 10,10.1A2.1,2.1 0 0,0 12.1,8A2.1,2.1 0 0,0 10,5.9M15.5,12C18,12 20,14 20,16.5C20,17.38 19.75,18.21 19.31,18.9L22.39,22L21,23.39L17.88,20.32C17.19,20.75 16.37,21 15.5,21C13,21 11,19 11,16.5C11,14 13,12 15.5,12M15.5,14A2.5,2.5 0 0,0 13,16.5A2.5,2.5 0 0,0 15.5,19A2.5,2.5 0 0,0 18,16.5A2.5,2.5 0 0,0 15.5,14Z" />
+                            </svg>
+                        </div>
+                </section>
+                <section>
+                    <div class="iconeL deslocamentoXP paraFrente">
+                        <svg style="width:24px;height:24px" viewBox="0 0 24 24">
+                            <path fill="currentColor"
+                                d="M7,2H17A2,2 0 0,1 19,4V20A2,2 0 0,1 17,22H7A2,2 0 0,1 5,20V4A2,2 0 0,1 7,2M7,4V8H17V4H7M7,10V12H9V10H7M11,10V12H13V10H11M15,10V12H17V10H15M7,14V16H9V14H7M11,14V16H13V14H11M15,14V16H17V14H15M7,18V20H9V18H7M11,18V20H13V18H11M15,18V20H17V18H15Z" />
+                        </svg>
+                    </div>
+                    <div class="text neutro resultado deslocamentoXN">Resultado</div>
+                </section>
+                <button onclick="coletarDados()">
+                    Calcular
+                </button>
+            </div>
+
+    </div>
+    <div class="modal">
+        <div onclick="fecharModal()" class="fechar">X</div>
+        <img class="explicacao" src="https://www.drrogermoura.com.br/images/artigos/tabela-imc.png" alt="Tabela IMC">
+    </div>
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

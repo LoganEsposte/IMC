@@ -1,0 +1,188 @@
+* {
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+h1 {
+    color: white;
+    margin: 1em auto;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #eeeeee;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+body {
+    background-image: url(https://www.planserv.ba.gov.br/wp-content/uploads/2020/11/plano-de-sa%C3%BAde-760x450.jpg);
+    background-repeat: repeat;
+    background-size: 100%;
+    background-position: top center;
+    
+}   
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 580px;
+    width: 90%;
+    margin: 2rem auto;
+    background-color: #af9fcb;
+    border-radius: 20px;
+}
+
+.img {
+    width: 80%;
+    height: 90%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+section {
+    width: 60%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    margin: 0.5em;
+    /* background-color: red; */
+}
+
+.text {
+    outline: none;
+    border: none;
+    font-weight: bold;
+    height: 3em;
+    font-size: 1.1em;
+    /* background-color: #ffffff; */
+    width: 80%;
+    text-align: center;
+    padding: 1em;
+    box-shadow: 3px 3px 10px black;
+    position: relative;
+}
+
+.iconeR, .iconeL {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #3f3b53;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    padding: 1em;
+    border-radius: 50%;
+    position: relative;
+}
+
+.deslocamentoXN{
+    left: -15px;
+}
+
+.deslocamentoXP{
+    left: 15px;
+}
+
+.paraFrente {
+    z-index: 1;
+}
+
+button {
+    font-weight: bold;
+    padding: 1em;
+    margin: 2em auto;
+    border-radius: 1em;
+    outline: none;
+    border: none;
+    font-size: 1em;
+    width: 30%;
+}       
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.negativo {
+    background-color: rgb(245, 75, 75);
+}
+
+.positivo {
+    background-color: rgb(58, 204, 58);
+}
+
+.neutro {
+    background-color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+button:hover, button:focus{
+    background-color: #3f3b53;
+    box-shadow:  3px 3px 10px black;
+    color: white;
+    cursor: pointer;
+}
+
+.explicacao {
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.modal {
+    width: 500px;
+    height: 500px;
+    background-color: #3f3b53;
+    border-radius: 1em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    display: none;
+    animation: acao .5s;
+    box-shadow: 5px 5px 20px black;
+}
+
+.saibaMais:hover{
+    cursor: pointer;
+}
+
+.fechar {
+    color: white;
+    font-size: 2em;
+    float: right;
+    margin: .5em .5em 0 0;
+    cursor: pointer;
+}
+
+.fechar:hover {
+    color: gray;
+}
+
+
+/*  ANIMATIONS MODAL */
+
+@keyframes acao {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
